@@ -1,0 +1,1 @@
+aptitude autoclean && aptitude clean && dpkg -l | awk '/^rc/ { print $2; }' | xargs aptitude -y purge
